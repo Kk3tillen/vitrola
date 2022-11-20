@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+}
+main img {
+    position: absolute;
+}
+
+main #vitrola {
+    width: 600px;
+    left: 25%;
+}
+
+main #disco {
+    width: 360px;
+    top: 3rem;
+    left: 40%;
+}
+
+main #braco-vitrola {
+    width: 320px;
+    left: 20%;
+    top: 4rem;
+    cursor: pointer;
+}
+
+.animate-spin {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.animate-braco-tocar {
+    -webkit-animation: braco-tocar 2s forwards;
+    animation: braco-tocar 2s forwards;
+    animation-iteration-count: initial;
+    animation-timing-function: linear;
+}
+
+.animate-braco-parar {
+    -webkit-animation: braco-parar 2s forwards;
+    animation: braco-parar 2s forwards;
+    animation-iteration-count: initial;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes braco-tocar {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0);
+    }
+    100% {
+        transform: translateX(4rem)  translateY(-2rem) rotate(-40deg);
+    }
+}
+
+@keyframes braco-parar {
+    0% {
+        transform: translateX(4rem) translateY(-2rem) rotate(-40deg);
+    }
+    100% {
+        transform: translateX(0)  translateY(0) rotate(0);
+    }
+}
