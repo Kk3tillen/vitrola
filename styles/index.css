@@ -3,11 +3,42 @@
     border: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+ul{
+    list-style: none;
+    width: 200px;
+    display: grid;
+    gap: 20px;
+}
+ui > li{
+    width: 100%;
+}
+
+button{
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    max-height: 100vh;
+    background: linear-gradient( rgb(38, 3, 48) 50%, rgb(2, 8, 24) 100%);
 }
 
 main {
     position: relative;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 main img {
     position: absolute;
 }
@@ -19,14 +50,14 @@ main #vitrola {
 
 main #disco {
     width: 360px;
-    top: 3rem;
-    left: 40%;
+    top: 130px;
+    left: 350px;
 }
 
 main #braco-vitrola {
     width: 320px;
-    left: 20%;
-    top: 4rem;
+    left: 112px;
+    top: 128px;
     cursor: pointer;
 }
 
