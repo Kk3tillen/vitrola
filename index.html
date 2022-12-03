@@ -9,17 +9,22 @@
     <title>Vitrola</title>
 </head>
 <body>
-    <ul>
-        <li><button onclick="playCarta('fran')">Carta de Francielen</button></li>
-        <li><button onclick="playCarta('kezia')">Carta de Kézia</button></li>
-        <li><button onclick="playCarta('paola')">Carta de Paola</button></li>
-        <li><button onclick="playCarta('duda')">Carta de Maria Eduarda Cardoso</button></li>
-    </ul>
-
+    <aside>
+        <ul>
+            <li><button onclick="playCarta('fran')">Carta de Francielen</button></li>
+            <li><button onclick="playCarta('kezia')">Carta de Kézia</button></li>
+            <li><button onclick="playCarta('paola')">Carta de Paola</button></li>
+            <li><button onclick="playCarta('duda')">Carta de Maria Eduarda Cardoso</button></li>
+        </ul>
+    </aside>
     <main>
-        <img id="vitrola" src="public/imgs/vitrola.svg" alt="Caixa de cor preta com encaixes para as peças de uma vitrola">
-        <img id="disco" src="public/imgs/Disco.svg" alt="Disco com um ciruclo ao centro para encaixe na vitrola">
-        <img id="braco-vitrola" src="public/imgs/braco-vitrola.svg" alt="Peça preta com ponta vermelha, responsável pela leitura do vinil">
+        <section>
+            <section>
+                <img id="braco-vitrola" src="public/imgs/braco-vitrola.svg" alt="Peça preta com ponta vermelha, responsável pela leitura do vinil">
+                <img id="disco" src="public/imgs/Disco.svg" alt="Disco com um ciruclo ao centro para encaixe na vitrola">
+            </section>
+            <img id="vitrola" src="public/imgs/vitrola.svg" alt="Caixa de cor preta com encaixes para as peças de uma vitrola">
+        </section>
     </main>
 </body>
 </html>

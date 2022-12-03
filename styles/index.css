@@ -5,15 +5,21 @@
     box-sizing: border-box;
     
 }
+
+aside {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 ul{
     list-style: none;
-    width: 200px;
+    width: 50%;
     display: grid;
     gap: 20px;
 }
-ui > li{
-    width: 100%;
-}
+
 
 button{
     width: 100%;
@@ -24,14 +30,13 @@ button{
 
 body{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     max-height: 100vh;
     background: linear-gradient( rgb(38, 3, 48) 50%, rgb(2, 8, 24) 100%);
 }
 
 main {
-    position: relative;
     height: 100vh;
     width: 50%;
     display: flex;
@@ -39,26 +44,32 @@ main {
     align-items: center;
 }
 
-main img {
+main > section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > section > section {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
 
 main #vitrola {
     width: 600px;
-    left: 25%;
 }
 
 main #disco {
     width: 360px;
-    top: 130px;
-    left: 350px;
+    z-index: 0;
 }
 
 main #braco-vitrola {
-    width: 320px;
-    left: 112px;
-    top: 128px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .animate-spin {
