@@ -28,6 +28,24 @@ button{
     cursor: pointer;
 }
 
+button:focus {
+    font-weight: bold;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:focus:before {
+    content:"\A";
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #dd4397 transparent transparent;
+    position: absolute;
+    left: 30px;
+    transform: scaleX(-1);  
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -80,15 +98,15 @@ main #braco-vitrola {
 }
 
 .animate-braco-tocar {
-    -webkit-animation: braco-tocar 2s forwards;
-    animation: braco-tocar 2s forwards;
+    -webkit-animation: braco-tocar 1s forwards;
+    animation: braco-tocar 1s forwards;
     animation-iteration-count: initial;
     animation-timing-function: linear;
 }
 
 .animate-braco-parar {
-    -webkit-animation: braco-parar 2s forwards;
-    animation: braco-parar 2s forwards;
+    -webkit-animation: braco-parar 1s forwards;
+    animation: braco-parar 1s forwards;
     animation-iteration-count: initial;
     animation-timing-function: linear;
 }
