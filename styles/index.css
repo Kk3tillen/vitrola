@@ -5,14 +5,39 @@
     box-sizing: border-box;
     
 }
-ul{
-    list-style: none;
-    width: 200px;
-    display: grid;
-    gap: 20px;
+.tudo{
+    display: flex;
+    gap: 25px;
+    text-decoration: none;
 }
+.audios{
+    display:grid;
+    gap: 25px;
+    width: 200px;
+}
+.list{
+    text-decoration: none;
+}
+button:focus {
+    font-weight: bold;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button:focus:before {
+    content:"\A";
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #df1b1b transparent transparent;
+    position: absolute;
+    left: 30px;
+    transform: scaleX(-1);  
+}
+
 ui > li{
     width: 100%;
+    text-decoration: none;
 }
 
 button{
@@ -27,7 +52,7 @@ body{
     justify-content: center; 
     align-items: center;
     max-height: 100vh;
-    background: linear-gradient( rgb(38, 3, 48) 50%, rgb(2, 8, 24) 100%);
+    background: linear-gradient( rgb(186, 51, 13) 50%, rgb(168, 88, 22) 100%);
 }
 
 main {
@@ -71,13 +96,18 @@ main #braco-vitrola {
 .animate-braco-tocar {
     -webkit-animation: braco-tocar 2s forwards;
     animation: braco-tocar 2s forwards;
+    -webkit-animation: braco-tocar 1s forwards;
+    animation: braco-tocar 1s forwards;
     animation-iteration-count: initial;
     animation-timing-function: linear;
+
 }
 
 .animate-braco-parar {
     -webkit-animation: braco-parar 2s forwards;
     animation: braco-parar 2s forwards;
+    -webkit-animation: braco-parar 1s forwards;
+    animation: braco-parar 1s forwards;
     animation-iteration-count: initial;
     animation-timing-function: linear;
 }
